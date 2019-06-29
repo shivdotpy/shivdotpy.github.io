@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.0b9a5b200b51efed6c883b41965c081c.js"
+  "/precache-manifest.edfc02050d3cf8766480f84d8e32bcff.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "shiv-portfolio"});
