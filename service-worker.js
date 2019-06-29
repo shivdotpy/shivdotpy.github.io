@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.97f97369c9c25c2d31387341d98cb5a3.js"
+  "/precache-manifest.0b9a5b200b51efed6c883b41965c081c.js"
 );
 
-workbox.clientsClaim();
+workbox.core.setCacheNameDetails({prefix: "shiv-portfolio"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
@@ -27,8 +27,3 @@ workbox.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-
-workbox.routing.registerNavigationRoute("/index.html", {
-  
-  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
-});
